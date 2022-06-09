@@ -1,12 +1,13 @@
+import type { NextPage } from 'next';
 import PageHead from '@components/PageHead';
 import Welcome from '@components/Welcome';
-import type { NextPage } from 'next';
-// import Image from 'next/image';
+import PersonalInfo from '@components/PersonalInfo';
 
 const Home: NextPage = () => (
     <div className="h-screen bg-black">
         <PageHead />
         <Welcome />
+        <PersonalInfo />
         {/* <footer className="">
             <a
                 href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
