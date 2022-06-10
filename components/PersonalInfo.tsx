@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import Image from 'next/image';
 import me from 'public/assets/me-2.jpeg';
@@ -40,12 +41,12 @@ const PersonalInfo = () => (
                     Hi, I&#39;m
                     {' '}
                     <b>Felix</b>
-                    . I&#39;m Systems Engineer and I&#39;m from Caracas, Venezuela 🇻🇪. I&#39;m 25 years old and I&#39;m a React Developer since 2019. I characterize myself for being really honest, detailed, responsible and for all the time wanting to do things well.
+                    . I&#39;m a System Engineer from Caracas, Venezuela 🇻🇪. I&#39;m 25 years old and I have been working as a React Developer since 2019. I&#39;m able to describe myself for being really honest, detailed, responsible and active in terms of work. I&#39;m into doing things well.
 
                     <br />
                     <br />
 
-                    I consider myself a person who never give up, I always try to overcome the obstacles and I try to stand out from others. I always try to help, support and learn from my coworkers to keep growing as a professional and as a human being.
+                    I consider myself as a person who never gives up, I always try to overcome the obstacles and I try to stand out from others. I always try to help, support and learn from my coworkers to keep growing as a professional and as a human being.
                 </p>
 
                 <div className="flex items-center mt-8 text-slate-700">
