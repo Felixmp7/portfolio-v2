@@ -1,7 +1,13 @@
 import React from 'react';
+import Layout from './layout/Layout';
 
 const Welcome = () => (
-    <div className="flex flex-col items-center justify-center text-white min-h-90-screen welcome-bg">
+    <Layout
+        classes={{
+            outside: 'bg-custom-black',
+            container: 'flex flex-col items-center justify-center text-white welcome-bg min-h-90-screen',
+        }}
+    >
         <div className="inline-block text-center">
             <h1 className="mb-4 text-4xl text-red-500">Hello</h1>
             <h2 className="pr-1 mb-4 text-6xl border-r-4">
@@ -24,7 +30,7 @@ const Welcome = () => (
         >
             Hire me
         </button>
-    </div>
+    </Layout>
 );
 
 export default Welcome;

@@ -1,8 +1,9 @@
 /* eslint-disable max-len */
 import React from 'react';
 import Image from 'next/image';
-import me from 'public/assets/me-2.jpeg';
+import me from 'public/assets/me-6.jpeg';
 import reactLogo from 'public/assets/skills/react.png';
+import Layout from './layout/Layout';
 
 const socialLinks = [
     {
@@ -23,12 +24,18 @@ const socialLinks = [
 ];
 
 const PersonalInfo = () => (
-    <div className="flex flex-col items-center justify-center text-black min-h-screen-3/4 personal-info-bg">
-        <div className="grid w-2/3 grid-cols-3 gap-x-10">
-            <div className="col-span-1 overflow-hidden shadow-xl rounded-xl">
+
+    <Layout
+        classes={{
+            outside: 'personal-info-bg',
+            container: 'flex flex-col items-center justify-center text-black min-h-screen-3/4',
+        }}
+    >
+        <div className="flex w-5/6 my-20 desktop:w-2/3 gap-x-10 desktop:my-0">
+            <div className="relative w-1/2 overflow-hidden shadow-xl rounded-xl">
                 <Image src={me} alt="me" layout="responsive" />
             </div>
-            <div className="col-span-2">
+            <div className="w-2/3">
                 <h4 className="text-3xl font-medium text-slate-800">Felix Pacheco</h4>
                 <div className="flex items-center mb-8">
                     <Image src={reactLogo} alt="react" width={20} height={20} />
@@ -65,7 +72,7 @@ const PersonalInfo = () => (
                 </button>
             </div>
         </div>
-    </div>
+    </Layout>
 );
 
 export default PersonalInfo;
