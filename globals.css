@@ -23,14 +23,14 @@ a {
 }
 
 .welcome-bg {
-  background-image: url('./public/assets/background-1.jpeg');
+  background-image: url('./public/assets/welcome.jpeg');
   background-size: cover;
   background-position-y: center;
   background-repeat: no-repeat;
 }
 
 .personal-info-bg {
-  background-image: url('./public/assets/bg-2.jpeg');
+  background-image: url('./public/assets/personal-info.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
 }

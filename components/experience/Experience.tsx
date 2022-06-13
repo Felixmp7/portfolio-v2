@@ -16,8 +16,8 @@ const Experience = ({ currentExperience }: Props) => (
     <div className={getDefaultStyles(currentExperience.isCurrent)}>
         <span className="block text-sm">{currentExperience.period}</span>
         <span className="block text-xl font-semibold">{currentExperience.charge}</span>
-        <span className={`text-sm ${getTextColor(currentExperience.enterprise.name)}`}>
-            {currentExperience.enterprise.name}
+        <span className={`text-sm ${getTextColor(currentExperience.enterprise.slug)}`}>
+            {currentExperience.enterprise.slug}
         </span>
         <p className="mt-6 text-sm">{currentExperience.resume}</p>
     </div>

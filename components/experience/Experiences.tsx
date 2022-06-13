@@ -4,8 +4,9 @@ import anIncubatorLogo from 'public/assets/enterprises/anincubator-logo.png';
 import serviseniorLogo from 'public/assets/enterprises/servisenior-logo.png';
 import wadaraLogo from 'public/assets/enterprises/wadara-logo.png';
 import brocsoftLogo from 'public/assets/enterprises/brocsoft-logo.png';
+import { eEntrerprises } from 'types';
 import Layout from '../layout/Layout';
-import { eEntrerprises, TExperience } from './helpers';
+import { TExperience } from './helpers';
 import Experience from './Experience';
 
 const experiences: TExperience[] = [
@@ -13,7 +14,7 @@ const experiences: TExperience[] = [
         period: 'Agosto 2018 - Enero 2019',
         charge: 'React Developer Jr.',
         enterprise: {
-            name: eEntrerprises.ezgmz,
+            slug: eEntrerprises.ezgmz,
             logo: ezgmzLogo,
         },
         resume: 'Desde mi ingreso a Ezgmz, pasé por un periodo de adaptación en donde probé tecnologias como: Docker y Kubernetes para finalmente comenzar a adentrarme en el mundo de React.',
@@ -22,7 +23,7 @@ const experiences: TExperience[] = [
         period: 'Junio 2019 - Agosto 2020',
         charge: 'React Native Developer Jr.',
         enterprise: {
-            name: eEntrerprises.anincubator,
+            slug: eEntrerprises.anincubator,
             logo: anIncubatorLogo,
         },
         resume: 'Durante este periodo aprendí React Native trabajando en el desarrollo de una aplicación móvil (iBeen) la cual consistia en una red social para compartir lugares y experiencias alrededor del mundo.',
@@ -31,7 +32,7 @@ const experiences: TExperience[] = [
         period: 'Septiembre 2020 - Abril 2021',
         charge: 'React Developer',
         enterprise: {
-            name: eEntrerprises.servisenior,
+            slug: eEntrerprises.servisenior,
             logo: serviseniorLogo,
         },
         resume: 'Trabajé manteniendo pull de aplicaciones web hechas en React y desarrollos de landing pages con Next JS. Además pude aprender sobre test unitarios aplicandolos en los distintos proyectos.',
@@ -40,7 +41,7 @@ const experiences: TExperience[] = [
         period: 'Abril 2021 - Noviembre 2021',
         charge: 'React Developer Ssr.',
         enterprise: {
-            name: eEntrerprises.wadara,
+            slug: eEntrerprises.wadara,
             logo: wadaraLogo,
         },
         resume: 'Desarrollo de aplicaciones web con React y apps móviles con React Native.',
@@ -50,7 +51,7 @@ const experiences: TExperience[] = [
         isCurrent: true,
         charge: 'React Developer Ssr.',
         enterprise: {
-            name: eEntrerprises.brocsoft,
+            slug: eEntrerprises.brocsoft,
             logo: brocsoftLogo,
         },
         resume: 'Desarrollo y mantenimiento de aplicaciones web para clientes de la empresa.',

@@ -1,8 +1,9 @@
 /* eslint-disable max-len */
 import React from 'react';
 import Image from 'next/image';
-import me from 'public/assets/me-6.jpeg';
-import reactLogo from 'public/assets/skills/react.png';
+import me from 'public/assets/me.jpeg';
+import reactLogo from 'public/assets/react.png';
+import { saveAs } from 'file-saver';
 import Layout from './layout/Layout';
 
 const socialLinks = [
@@ -23,8 +24,9 @@ const socialLinks = [
     },
 ];
 
-const PersonalInfo = () => (
+const handleDownload = () => saveAs('/assets/cv-june-2022.pdf', 'cv-felix-pacheco.pdf');
 
+const PersonalInfo = () => (
     <Layout
         classes={{
             outside: 'personal-info-bg',
@@ -55,7 +57,13 @@ const PersonalInfo = () => (
 
                     I consider myself as a person who never gives up, I always try to overcome the obstacles and I try to stand out from others. I always try to help, support and learn from my coworkers to keep growing as a professional and as a human being.
                 </p>
-
+                <button
+                    type="button"
+                    onClick={handleDownload}
+                    className="px-4 py-2 mt-8 transition-all duration-500 border rounded text-slate-700 border-react ease hover:bg-react hover:text-white hover:border-slate-100"
+                >
+                    Download my CV
+                </button>
                 <div className="flex items-center mt-8 text-slate-700">
                     {socialLinks.map((link) => (
                         <a key={link.name} href={link.url} target="__blank" className="mr-4 text-2xl">
@@ -63,13 +71,6 @@ const PersonalInfo = () => (
                         </a>
                     ))}
                 </div>
-
-                <button
-                    type="button"
-                    className="px-4 py-2 mt-8 transition-all duration-500 border rounded text-slate-700 border-react ease hover:bg-react hover:text-white hover:border-slate-100"
-                >
-                    Download my CV
-                </button>
             </div>
         </div>
     </Layout>
