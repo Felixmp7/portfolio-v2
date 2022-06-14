@@ -36,15 +36,15 @@ const LatestWorks = () => {
         >
             {' '}
             <h4 className="text-3xl font-medium">{t('latestWorks.title')}</h4>
-            <p className="w-1/2 mt-8">
+            <p className="mt-8 mobileLg:w-1/2">
                 {t('latestWorks.description')}
             </p>
 
-            <div className="grid grid-cols-3 gap-12 mt-10">
+            <div className="grid grid-cols-1 gap-12 mt-10 tablet:grid-cols-2 laptopLg:grid-cols-3">
                 {latestWorkImages.map((work, index) => {
                     if (work.images.length > 1) {
                         return (
-                            <div key={index} className="grid grid-cols-3 gap-5">
+                            <div key={index} className="grid gap-5 tablet:col-span-2 tablet:grid-cols-3 laptopLg:col-span-1">
                                 {work.images.map((imageSrc, subIndex) => (
                                     <Image
                                         key={subIndex}
