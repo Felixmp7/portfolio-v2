@@ -49,6 +49,7 @@ const LatestWorks = () => {
                                     <Image
                                         key={subIndex}
                                         src={imageSrc}
+                                        quality={1}
                                         className="transition duration-200 hover:scale-105 ease"
                                         alt="work"
                                         layout="responsive"
@@ -61,6 +62,7 @@ const LatestWorks = () => {
                         <div key={index}>
                             <Image
                                 src={work.images[0]}
+                                quality={1}
                                 alt="work"
                                 className="transition duration-200 hover:scale-105 ease"
                                 layout="responsive"
