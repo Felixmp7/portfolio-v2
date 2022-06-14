@@ -13,7 +13,7 @@ const getActiveClasses = (isInEnglish: boolean) => {
     return 'bg-gradient-to-r from-cyan-600 to-blue-600 border-none';
 };
 
-const ToggleLanguage = ({ locale, pathname }: Props): JSX.Element => {
+const ToggleLanguage = ({ locale, pathname }: Props) => {
     const isInEnglish = locale === 'en';
 
     return (

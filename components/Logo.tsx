@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import logo from 'public/assets/logos/gray.png';
 import ToggleLanguage from './ToggleLanguage';
 
-const Logo = (): JSX.Element => {
+const Logo = () => {
     const { locale, pathname } = useRouter();
     return (
         <div className="flex items-end">
