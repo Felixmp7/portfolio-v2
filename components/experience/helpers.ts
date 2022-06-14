@@ -1,11 +1,13 @@
-import { eEntrerprises, TEnterprise } from 'types';
+import { eEntrerprises } from 'types';
 
 export type TExperience = {
     period: string,
+    periodTranslated: string,
     isCurrent?: boolean,
     charge: string,
-    enterprise: TEnterprise,
+    enterpriseSlug: eEntrerprises,
     resume: string,
+    resumeTranslated: string,
 }
 
 export const getTextColor = (slug: eEntrerprises) => {
