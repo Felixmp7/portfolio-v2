@@ -1,22 +1,22 @@
 import React from 'react';
-import ss1 from 'public/assets/latestWork/servisenior/site-1.png';
-import ss3 from 'public/assets/latestWork/servisenior/despachos-1.png';
-import ss4 from 'public/assets/latestWork/servisenior/enterprise-1.png';
-import w1 from 'public/assets/latestWork/wadara/interview1.png';
-import w2 from 'public/assets/latestWork/wadara/interview2.png';
-import w3 from 'public/assets/latestWork/wadara/interview3.png';
-import w4 from 'public/assets/latestWork/wadara/alo1.png';
-import w5 from 'public/assets/latestWork/wadara/alo2.png';
-import w6 from 'public/assets/latestWork/wadara/inspections1.jpg';
-import w7 from 'public/assets/latestWork/wadara/inspections2.jpg';
-import w8 from 'public/assets/latestWork/wadara/inspections3.jpg';
+import ss1 from 'public/assets/latestWork/servisenior/ss1.jpeg';
+import ss2 from 'public/assets/latestWork/servisenior/ss2.jpeg';
+import ss3 from 'public/assets/latestWork/servisenior/ss3.jpeg';
+import w1 from 'public/assets/latestWork/wadara/w1.png';
+import w2 from 'public/assets/latestWork/wadara/w2.png';
+import w3 from 'public/assets/latestWork/wadara/w3.png';
+import w4 from 'public/assets/latestWork/wadara/w4.png';
+import w5 from 'public/assets/latestWork/wadara/w5.png';
+import w6 from 'public/assets/latestWork/wadara/w6.jpeg';
+import w7 from 'public/assets/latestWork/wadara/w7.jpg';
+import w8 from 'public/assets/latestWork/wadara/w8.jpg';
 import Image from 'next/image';
 import Layout from './layout/Layout';
 
 const latestWork = [
     { images: [ss1] },
+    { images: [ss2] },
     { images: [ss3] },
-    { images: [ss4] },
     { images: [w1] },
     { images: [w2] },
     { images: [w3] },
