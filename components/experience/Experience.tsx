@@ -1,5 +1,4 @@
-import { useTranslation } from 'next-i18next';
-import React from 'react';
+import useLanguage from '@hooks/useLanguage';
 import { TExperience, getTextColor } from './helpers';
 
 type Props = {
@@ -14,8 +13,7 @@ const getDefaultStyles = (isActual?: boolean) => {
 };
 
 const Experience = ({ currentExperience }: Props) => {
-    const { i18n: { language } } = useTranslation('common');
-    const isInEnglish = language === 'en';
+    const { isInEnglish } = useLanguage();
 
     const period = isInEnglish ? currentExperience.periodTranslated : currentExperience.period;
     const resume = isInEnglish ? currentExperience.resumeTranslated : currentExperience.resume;
