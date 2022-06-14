@@ -1,4 +1,5 @@
 import { useTranslation } from 'next-i18next';
+import HireMeLink from './HireMeLink';
 import Layout from './layout/Layout';
 import Logo from './Logo';
 
@@ -31,12 +32,7 @@ const Welcome = () => {
                     <span className="text-green-300">Developer</span>
                 </h3>
             </div>
-            <button
-                type="button"
-                className="px-4 py-2 mt-16 transition-all duration-500 border rounded ease hover:bg-white hover:text-slate-900 hover:border-slate-100"
-            >
-                {t('commons.hireMe')}
-            </button>
+            <HireMeLink />
         </Layout>
     );
 };
