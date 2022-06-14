@@ -44,9 +44,9 @@ a {
   }
 
   .esLanguage:hover {
-    @apply bg-gradient-to-r from-cyan-600 to-blue-600
+    @apply bg-gradient-to-r from-cyan-600 to-blue-600;
   }
   .enLanguage:hover {
-    @apply bg-gradient-to-r from-rose-600 to-orange-600
+    @apply bg-gradient-to-r from-rose-600 to-orange-600;
   }
 }
