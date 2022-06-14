@@ -14,7 +14,7 @@ const HireMeLink = () => {
 
     return (
         <a
-            className="px-4 py-2 mt-16 transition-all duration-500 border rounded ease hover:bg-white hover:text-slate-900 hover:border-slate-100"
+            className="px-4 py-2 transition-all duration-500 border rounded ease hover:bg-white hover:text-slate-900 hover:border-slate-100"
             href={`mailto:devfex.19@gmail.com?${getSubjectAndEmailBody(isInEnglish)}`}
         >
             {t('commons.hireMe')}

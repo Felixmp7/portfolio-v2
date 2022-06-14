@@ -25,7 +25,6 @@ a {
 .welcome-bg {
   background-image: url('./public/assets/backgrounds/welcome.jpeg');
   background-size: cover;
-  background-position-y: center;
   background-repeat: no-repeat;
 }
 
@@ -38,6 +37,17 @@ a {
 @layer utilities {
   .containerXl {
     max-width: 1396px;
+    @apply px-10;
+  }
+  @screen mobile {
+    .containerXl {
+      @apply px-20;
+    }
+  }
+  @screen bigScreen {
+    .containerXl {
+      @apply px-0;
+    }
   }
   .toggleLangugage {
     @apply px-2 text-center transition-all duration-500 cursor-pointer rounded-3xl;

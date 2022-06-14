@@ -10,21 +10,21 @@ const Welcome = () => {
         <Layout
             classes={{
                 outside: 'bg-custom-black',
-                container: 'flex flex-col items-center justify-center text-white welcome-bg min-h-90-screen relative',
+                container: 'flex flex-col items-center justify-center text-white welcome-bg min-h-90-screen relative bg-center',
             }}
         >
-            <div className="absolute left-0 top-10">
+            <div className="absolute left-10 mobile:left-20 bigScreen:left-0 top-10">
                 <Logo />
             </div>
             <div className="inline-block text-center">
-                <h1 className="mb-4 text-4xl text-red-500">{t('welcome.h1')}</h1>
-                <h2 className="pr-1 mb-4 text-6xl border-r-4">
+                <h1 className="mb-4 text-2xl text-red-500 mobileSm:text-3xl mobileXl:text-4xl">{t('welcome.h1')}</h1>
+                <h2 className="pr-1 mb-4 text-3xl border-r-4 mobileSm:text-5xl mobileXl:text-6xl">
                     {t('welcome.h2.text')}
                     {' '}
                     <span className="font-semibold">{t('welcome.h2.boldText')}</span>
                 </h2>
 
-                <h3 className="font-light">
+                <h3 className="text-sm font-light mobileSm:text-base">
                     <span className="text-blue-300">React</span>
                     {' '}
                     • Frontend •
@@ -32,7 +32,9 @@ const Welcome = () => {
                     <span className="text-green-300">Developer</span>
                 </h3>
             </div>
-            <HireMeLink />
+            <div className="absolute bottom-10 mobileXl:static mobileXl:mt-16">
+                <HireMeLink />
+            </div>
         </Layout>
     );
 };

@@ -37,6 +37,7 @@ module.exports = {
             laptopLg: '1180px',
             laptopXl: '1260px',
             desktop: '1344px',
+            bigScreen: '1564px',
         },
         extend: {
             minHeight: {
