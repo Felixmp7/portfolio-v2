@@ -1,0 +1,27 @@
+{
+    "commons": {
+        "hireMe": "Hire me"
+    },
+    "welcome": {
+        "h1": "Hello",
+        "h2": {
+            "text": "I'm",
+            "boldText": "Engineer"
+        }
+    },
+    "personalInfo": {
+        "greeting": "Hi, I'm",
+        "paragraph1": "I'm a System Engineer from Caracas, Venezuela 🇻🇪. I'm 25 years old and I have been working as a React Developer since 2019. I'm able to describe myself for being really honest, detailed, responsible and active in terms of work. I'm into doing things well.",
+        "paragraph2": "I consider myself as a person who never gives up, I always try to overcome the obstacles and I try to stand out from others. I always try to help, support and learn from my coworkers to keep growing as a professional and as a human being.",
+        "downloadCv": "Download my CV"
+    },
+    "latestWorks": {
+        "title": "Latest Works",
+        "description": "For confidentiality issues and data sensitivity I can't share some assets from my latest works, however you can view most of them in the last year below:"
+    },
+    "experiences": {
+        "title": "Experience",
+        "description": "Since my beginning at the end of 2018 I have worked and inverted time on my growth to fortify my debilities and every day I get closer to the professional I want to be."
+    },
+    "callToAction": "Have any project in mind?"
+}

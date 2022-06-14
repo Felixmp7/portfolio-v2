@@ -1,0 +1,27 @@
+{
+   "commons": {
+      "hireMe": "Contrátame"
+   },
+   "welcome": {
+      "h1": "Hola",
+      "h2": {
+         "text": "Soy",
+         "boldText": "Ingeniero"
+      }
+   },
+   "personalInfo": {
+      "greeting": "Hola, soy",
+      "paragraph1": "Soy Ingeniero de Sistemas y soy de Caracas, Venezuela 🇻🇪. Tengo 25 años y vengo trabajando con React desde el 2019. Me caracterizo por ser muy honesto, detallista, responsable y por siempre querer hacer las cosas de la mejor manera.",
+      "paragraph2": "Me considero una persona que nunca se rinde, siempre trato de superar los obstaculos que se me presentan y trato de destacar entre los demás. Siempre intento ayudar, apoyar y aprender de mis compañeros para seguir creciendo como profesional y como ser humano.",
+      "downloadCv": "Descarga mi CV"
+   },
+   "latestWorks": {
+      "title": "Últimos trabajos",
+      "description": "Por temas de confidencialidad y sensibilidad de los datos no puedo compartir algunos screenshots de mi más reciente trabajo, sin embargo puedes visualizar la mayoria de ellos en el último año a continuación:"
+   },
+   "experiences": {
+      "title": "Experiencia",
+      "description": "Desde mis inicios a finales del 2018 he trabajado e invertido tiempo en mi crecimiento para fortalecer mis debilidades y cada dia acercarme más al profesional que quiero ser."
+   },
+   "callToAction": "¿Tienes algún proyecto en mente?"
+}
