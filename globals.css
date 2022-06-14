@@ -39,4 +39,14 @@ a {
   .containerXl {
     max-width: 1396px;
   }
+  .toggleLangugage {
+    @apply px-2 text-center transition-all duration-500 cursor-pointer rounded-3xl;
+  }
+
+  .esLanguage:hover {
+    @apply bg-gradient-to-r from-cyan-600 to-blue-600
+  }
+  .enLanguage:hover {
+    @apply bg-gradient-to-r from-rose-600 to-orange-600
+  }
 }
