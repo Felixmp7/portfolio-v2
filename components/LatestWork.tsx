@@ -11,9 +11,10 @@ import w6 from 'public/assets/latestWork/wadara/w6.jpeg';
 import w7 from 'public/assets/latestWork/wadara/w7.jpg';
 import w8 from 'public/assets/latestWork/wadara/w8.jpg';
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 import Layout from './layout/Layout';
 
-const latestWork = [
+const latestWorkImages = [
     { images: [ss1] },
     { images: [ss2] },
     { images: [ss3] },
@@ -24,49 +25,52 @@ const latestWork = [
     { images: [w5] },
     { images: [w6, w7, w8] },
 ];
-const LatestWork = () => (
-    <Layout
-        classes={{
-            outside: 'bg-slate-900',
-            container: 'text-slate-300 min-h-screen-3/4 py-20 px-5',
-        }}
-    >
-        {' '}
-        <h4 className="text-3xl font-medium">Latest Work</h4>
-        <p className="w-1/2 mt-8">
-            Por temas de confidencialidad y sensibilidad de datos no puedo compartir algunos assets de mis últimos trabajos, sin embargo puedes visualizar la mayoria de ellos en el último año a continuación:
-        </p>
+const LatestWorks = () => {
+    const { t } = useTranslation('common');
+    return (
+        <Layout
+            classes={{
+                outside: 'bg-slate-900',
+                container: 'text-slate-300 min-h-screen-3/4 py-20 px-5',
+            }}
+        >
+            {' '}
+            <h4 className="text-3xl font-medium">{t('latestWorks.title')}</h4>
+            <p className="w-1/2 mt-8">
+                {t('latestWorks.description')}
+            </p>
 
-        <div className="grid grid-cols-3 gap-12 mt-10">
-            {latestWork.map((work, index) => {
-                if (work.images.length > 1) {
+            <div className="grid grid-cols-3 gap-12 mt-10">
+                {latestWorkImages.map((work, index) => {
+                    if (work.images.length > 1) {
+                        return (
+                            <div key={index} className="grid grid-cols-3 gap-5">
+                                {work.images.map((imageSrc, subIndex) => (
+                                    <Image
+                                        key={subIndex}
+                                        src={imageSrc}
+                                        className="transition duration-200 hover:scale-105 ease"
+                                        alt="work"
+                                        layout="responsive"
+                                    />
+                                ))}
+                            </div>
+                        );
+                    }
                     return (
-                        <div key={index} className="grid grid-cols-3 gap-5">
-                            {work.images.map((imageSrc, subIndex) => (
-                                <Image
-                                    key={subIndex}
-                                    src={imageSrc}
-                                    className="transition duration-200 hover:scale-105 ease"
-                                    alt="work"
-                                    layout="responsive"
-                                />
-                            ))}
+                        <div key={index}>
+                            <Image
+                                src={work.images[0]}
+                                alt="work"
+                                className="transition duration-200 hover:scale-105 ease"
+                                layout="responsive"
+                            />
                         </div>
                     );
-                }
-                return (
-                    <div key={index}>
-                        <Image
-                            src={work.images[0]}
-                            alt="work"
-                            className="transition duration-200 hover:scale-105 ease"
-                            layout="responsive"
-                        />
-                    </div>
-                );
-            })}
-        </div>
-    </Layout>
-);
+                })}
+            </div>
+        </Layout>
+    );
+};
 
-export default LatestWork;
+export default LatestWorks;

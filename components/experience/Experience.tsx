@@ -1,3 +1,4 @@
+import { useTranslation } from 'next-i18next';
 import React from 'react';
 import { TExperience, getTextColor } from './helpers';
 
@@ -12,15 +13,23 @@ const getDefaultStyles = (isActual?: boolean) => {
     return 'p-8 transition-all duration-500 ease hover:bg-slate-100 hover:text-slate-700';
 };
 
-const Experience = ({ currentExperience }: Props) => (
-    <div className={getDefaultStyles(currentExperience.isCurrent)}>
-        <span className="block text-sm">{currentExperience.period}</span>
-        <span className="block text-xl font-semibold">{currentExperience.charge}</span>
-        <span className={`text-sm ${getTextColor(currentExperience.enterprise.slug)}`}>
-            {currentExperience.enterprise.slug}
-        </span>
-        <p className="mt-6 text-sm">{currentExperience.resume}</p>
-    </div>
-);
+const Experience = ({ currentExperience }: Props) => {
+    const { i18n: { language } } = useTranslation('common');
+    const isInEnglish = language === 'en';
+
+    const period = isInEnglish ? currentExperience.periodTranslated : currentExperience.period;
+    const resume = isInEnglish ? currentExperience.resumeTranslated : currentExperience.resume;
+
+    return (
+        <div className={getDefaultStyles(currentExperience.isCurrent)}>
+            <span className="block text-sm">{period}</span>
+            <span className="block text-xl font-semibold">{currentExperience.charge}</span>
+            <span className={`text-sm capitalize ${getTextColor(currentExperience.enterpriseSlug)}`}>
+                {currentExperience.enterpriseSlug}
+            </span>
+            <p className="mt-6 text-sm">{resume}</p>
+        </div>
+    );
+};
 
 export default Experience;
