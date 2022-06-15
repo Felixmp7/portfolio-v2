@@ -12,6 +12,7 @@ module.exports = {
             ...theme('colors'),
             'custom-purple': '#582DE8',
             react: '#54def2',
+            reactDark: '#39bdd1',
         }),
         borderColor: (theme) => ({
             ...theme('colors'),
