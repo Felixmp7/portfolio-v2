@@ -60,7 +60,7 @@ const Experiences = () => {
             }}
         >
             <h4 className="text-3xl font-medium">{t('experiences.title')}</h4>
-            <p className="w-1/2 mt-8">
+            <p className="mt-8 mobileLg:w-1/2">
                 {t('experiences.description')}
             </p>
 
