@@ -12,7 +12,7 @@ const CallToAction = () => {
                 container: 'text-slate-100 p-10 text-center',
             }}
         >
-            <h5 className="text-4xl">{t('callToAction')}</h5>
+            <h5 className="text-2xl mobileXl:text-4xl">{t('callToAction')}</h5>
             <div className="w-40 mx-auto mt-4 mb-10 border" />
             <HireMeLink />
         </Layout>

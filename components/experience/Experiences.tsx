@@ -64,7 +64,7 @@ const Experiences = () => {
                 {t('experiences.description')}
             </p>
 
-            <div className="grid grid-cols-3 mt-10 divide-x">
+            <div className="grid mt-10 divide-y tabletLg:grid-cols-2 laptopLg:divide-y-0 laptopLg:divide-x laptopLg:grid-cols-3">
                 {experiences.map((experience, index) => (
                     <Experience key={index} currentExperience={experience} />
                 ))}
