@@ -10,7 +10,7 @@ const Welcome = () => {
         <Layout
             classes={{
                 outside: 'bg-custom-black',
-                container: 'flex flex-col items-center justify-center text-white welcome-bg min-h-90-screen relative bg-center',
+                container: 'flex flex-col items-center justify-center text-white welcome-bg h-screen min-h-90-screen mobileXl:h-auto relative bg-center',
             }}
         >
             <div className="absolute left-10 mobile:left-20 bigScreen:left-0 top-10">
