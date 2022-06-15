@@ -43,7 +43,7 @@ const PersonalInfo = () => {
                     <h4 className="text-3xl font-medium text-slate-800">Felix Pacheco</h4>
                     <div className="flex items-center mb-8">
                         <Image src={reactLogo} alt="react" width={20} height={20} />
-                        <h5 className="ml-2 text-lg text-react">
+                        <h5 className="ml-2 text-lg text-reactDark laptop:text-react">
                             React Developer
                         </h5>
                     </div>
@@ -62,7 +62,7 @@ const PersonalInfo = () => {
                         <button
                             type="button"
                             onClick={handleDownload}
-                            className="px-4 py-2 mt-8 transition-all duration-500 border rounded text-slate-700 border-react ease hover:bg-react hover:text-white hover:border-slate-100"
+                            className="px-4 py-2 mt-8 transition-all duration-500 border rounded border-react laptop:bg-transparent text-slate-50 bg-react laptop:text-slate-700 laptop:border-react ease laptop:hover:bg-react laptop:hover:text-white laptop:hover:border-slate-100"
                         >
                             {t('personalInfo.downloadCv')}
                         </button>
