@@ -10,9 +10,9 @@ type Props = {
 
 const Layout = ({ children, classes }: Props) => (
     <div className={classes?.outside}>
-        <div className={`${classes?.container} containerXl mx-auto`}>
+        <section className={`${classes?.container} containerXl mx-auto`}>
             {children}
-        </div>
+        </section>
     </div>
 );
 
