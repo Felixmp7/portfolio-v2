@@ -10,6 +10,9 @@ import w5 from 'public/assets/latestWork/wadara/w5.png';
 import w6 from 'public/assets/latestWork/wadara/w6.jpeg';
 import w7 from 'public/assets/latestWork/wadara/w7.jpg';
 import w8 from 'public/assets/latestWork/wadara/w8.jpg';
+import z1 from 'public/assets/latestWork/brocsoft/z1.png';
+import z3 from 'public/assets/latestWork/brocsoft/z3.png';
+import z4 from 'public/assets/latestWork/brocsoft/z4.png';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import Layout from './layout/Layout';
@@ -24,6 +27,9 @@ const latestWorkImages = [
     { images: [w4] },
     { images: [w5] },
     { images: [w6, w7, w8] },
+    { images: [z1] },
+    { images: [z3] },
+    { images: [z4] },
 ];
 const LatestWorks = () => {
     const { t } = useTranslation('common');
