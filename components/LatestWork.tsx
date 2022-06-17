@@ -40,11 +40,11 @@ const LatestWorks = () => {
                 {t('latestWorks.description')}
             </p>
 
-            <div className="grid grid-cols-1 gap-12 mt-10 tablet:grid-cols-2 laptopLg:grid-cols-3">
+            <div className="grid items-start grid-cols-1 gap-12 mt-10 tablet:grid-cols-2 laptopLg:grid-cols-3">
                 {latestWorkImages.map((work, index) => {
                     if (work.images.length > 1) {
                         return (
-                            <div key={index} className="grid gap-5 tablet:col-span-2 tablet:grid-cols-3 laptopLg:col-span-1">
+                            <div key={index} className="grid gap-5 overflow-hidden rounded-lg tablet:col-span-2 tablet:grid-cols-3 laptopLg:col-span-1">
                                 {work.images.map((imageSrc, subIndex) => (
                                     <Image
                                         key={subIndex}
@@ -59,7 +59,7 @@ const LatestWorks = () => {
                         );
                     }
                     return (
-                        <div key={index}>
+                        <div key={index} className="overflow-hidden rounded-lg">
                             <Image
                                 src={work.images[0]}
                                 quality={1}
