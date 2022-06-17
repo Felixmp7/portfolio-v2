@@ -32,7 +32,7 @@ const PersonalInfo = () => {
         <Layout
             classes={{
                 outside: 'personal-info-bg',
-                container: 'flex flex-col items-center justify-center text-black min-h-screen-3/4',
+                container: 'flex flex-col items-center justify-center text-black personal-info-min-h',
             }}
         >
             <div className="w-full my-20 laptop:flex laptopLg:w-5/6 desktop:w-2/3 gap-x-10 desktop:my-0">
@@ -41,14 +41,14 @@ const PersonalInfo = () => {
                 </div>
                 <div className="w-full mx-auto tablet:w-2/3">
                     <h4 className="text-3xl font-medium text-slate-800">Felix Pacheco</h4>
-                    <div className="flex items-center mb-8">
+                    <div className="items-center hidden tablet:flex">
                         <Image src={reactLogo} alt="react" width={20} height={20} />
-                        <h5 className="ml-2 text-lg text-reactDark laptop:text-react">
+                        <h5 className="ml-2 text-lg text-react">
                             React Developer
                         </h5>
                     </div>
 
-                    <p className="text-slate-700">
+                    <p className="mt-6 text-slate-700">
                         {t('personalInfo.greeting')}
                         {' '}
                         <b>Felix</b>
