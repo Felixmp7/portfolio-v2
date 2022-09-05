@@ -27,7 +27,7 @@ const PageHead = ({ title }: Props) => (
         <meta property="og:type" content="website" />
         <meta
             property="og:image"
-            content="https://felix-dev.vercel.app/assets/logos/gray.png"
+            content="https://felix-pacheco.vercel.app/assets/logos/gray.png"
         />
         <meta property="og:locale" content="es_VE" />
     </Head>
