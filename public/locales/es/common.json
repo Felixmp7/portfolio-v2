@@ -15,6 +15,11 @@
       "paragraph2": "Me considero una persona que nunca se rinde, siempre trato de superar los obstaculos que se me presentan y trato de destacar entre los demás. Siempre intento ayudar, apoyar y aprender de mis compañeros para seguir creciendo como profesional y como ser humano.",
       "downloadCv": "Descarga mi CV"
    },
+   "skills": {
+      "title": "Skills",
+      "description": "Resumen de tecnologías y algunas de las librerías más importantes con las que más he disfrutado trabajar:",
+      "latest": "Últimas tecnologías que deseo seguir aprendiendo con el objetivo de ser Full-Stack"
+   },
    "latestWorks": {
       "title": "Últimos trabajos",
       "description": "Por temas de confidencialidad y sensibilidad de los datos no puedo compartir algunos screenshots de mi más reciente trabajo, sin embargo puedes visualizar la mayoria de ellos en el último año a continuación:"

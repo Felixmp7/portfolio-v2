@@ -15,6 +15,11 @@
         "paragraph2": "I consider myself as a person who never gives up, I always try to overcome the obstacles and I try to stand out from others. I always try to help, support and learn from my coworkers to keep growing as a professional and as a human being.",
         "downloadCv": "Download my CV"
     },
+    "skills": {
+        "title": "Skills",
+        "description": "Summary of technologies and some of the most important libraries that I have most enjoyed working with:",
+        "latest": "Latest technologies that I want to keep learning to be a Full-Stack"
+    },
     "latestWorks": {
         "title": "Latest Works",
         "description": "For confidentiality issues and data sensitivity I can't share some assets from my latest works, however you can view most of them in the last year below:"
