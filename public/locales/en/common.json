@@ -18,7 +18,9 @@
     "skills": {
         "title": "Skills",
         "description": "Summary of technologies and some of the most important libraries that I have most enjoyed working with:",
-        "latest": "Latest technologies that I want to keep learning to be a Full-Stack"
+        "latestStack": "Latest stack with I have been working:",
+        "interestedToLearn": "Intersted to keep learning about:",
+        "restOfSkills": "Rest of skilss"
     },
     "latestWorks": {
         "title": "Latest Works",

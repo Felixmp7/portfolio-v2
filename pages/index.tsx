@@ -6,7 +6,7 @@ import PersonalInfo from '@components/PersonalInfo';
 import Experiences from '@components/experience/Experiences';
 import CallToAction from '@components/CallToAction';
 import LatestWork from '@components/LatestWork';
-import Skills from '@components/Skills';
+import Skills from '@components/skills/Skills';
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
     props: {

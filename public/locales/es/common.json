@@ -16,9 +16,11 @@
       "downloadCv": "Descarga mi CV"
    },
    "skills": {
-      "title": "Skills",
+      "title": "Habilidades",
       "description": "Resumen de tecnologías y algunas de las librerías más importantes con las que más he disfrutado trabajar:",
-      "latest": "Últimas tecnologías que deseo seguir aprendiendo con el objetivo de ser Full-Stack"
+      "latestStack": "Último stack con el que he venido trabajando:",
+      "interestedToLearn": "Interesado en seguir aprendiendo sobre:",
+      "restOfSkills": "Resto de habilidades:"
    },
    "latestWorks": {
       "title": "Últimos trabajos",
