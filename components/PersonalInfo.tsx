@@ -4,6 +4,7 @@ import { useTranslation } from 'next-i18next';
 import { saveAs } from 'file-saver';
 import me from 'public/assets/me.jpeg';
 import reactLogo from 'public/assets/react.png';
+import useLanguage from '@hooks/useLanguage';
 import Layout from './layout/Layout';
 
 const socialLinks = [
@@ -24,10 +25,18 @@ const socialLinks = [
     },
 ];
 
-const handleDownload = () => saveAs('/assets/cv-june-2022.pdf', 'cv-felix-pacheco.pdf');
-
 const PersonalInfo = () => {
     const { t } = useTranslation('common');
+    const { isInEnglish } = useLanguage();
+
+    const handleDownload = () => {
+        if (isInEnglish) {
+            saveAs('/assets/files/cv-september-2022_en.pdf', 'cv-felix-pacheco_en.pdf');
+        } else {
+            saveAs('/assets/files/cv-september-2022_es.pdf', 'cv-felix-pacheco_es.pdf');
+        }
+    };
+
     return (
         <Layout
             classes={{
