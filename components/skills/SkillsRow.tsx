@@ -6,9 +6,9 @@ type Props = {
 }
 
 const SkillsRow = ({ skills }: Props) => (
-    <div className="flex flex-wrap my-5">
+    <div className="grid grid-cols-2 my-5 place-items-center mobileLg:flex mobileLg:flex-wrap mobileLg:justify-start">
         {skills.map(({ icon, alt }, index) => (
-            <div key={index} className="inline-grid grid-cols-1 mb-5 mr-10 text-sm text-center transition duration-200 rounded-lg hover:scale-105 ease">
+            <div key={index} className="flex flex-col mb-5 text-sm text-center transition duration-200 rounded-lg mobileLg:mr-10 hover:scale-105 ease">
                 <Image
                     src={icon}
                     quality={1}
