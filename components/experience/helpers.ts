@@ -5,7 +5,7 @@ export type TExperience = {
     periodTranslated: string,
     isCurrent?: boolean,
     charge: string,
-    enterpriseSlug: eEntrerprises,
+    enterpriseSlug?: eEntrerprises,
     resume: string,
     resumeTranslated: string,
 }
