@@ -39,13 +39,20 @@ const experiences: TExperience[] = [
         resumeTranslated: 'Web and mobile apps development with React and React Native.',
     },
     {
-        period: 'Noviembre 2021 - Actual',
-        periodTranslated: 'November 2021 - Current',
-        isCurrent: true,
+        period: 'Noviembre 2021 - Septiembre 2022',
+        periodTranslated: 'November 2021 - September 2022',
         charge: 'React Developer Ssr.',
         enterpriseSlug: eEntrerprises.brocsoft,
         resume: 'Desarrollo y mantenimiento de aplicaciones web para clientes de la empresa.',
         resumeTranslated: 'Web apps development and maintenance for company clients',
+    },
+    {
+        period: 'Octubre 2022',
+        periodTranslated: 'October 2022',
+        charge: 'React Developer Ssr.',
+        isCurrent: true,
+        resume: 'En búsqueda de nuevas oportunidades',
+        resumeTranslated: 'Looking for new opportunities',
     },
 ];
 
