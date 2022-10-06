@@ -13,7 +13,7 @@ const CallToAction = () => {
             }}
         >
             <h5 className="text-2xl mobileXl:text-4xl">{t('callToAction')}</h5>
-            <div className="w-40 mx-auto mt-4 mb-10 border" />
+            <div className="w-40 h-[2px] mx-auto mt-4 mb-10 bg-white" />
             <HireMeLink />
         </Layout>
     );
