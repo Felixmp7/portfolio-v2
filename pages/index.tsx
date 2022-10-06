@@ -7,6 +7,7 @@ import Experiences from '@components/experience/Experiences';
 import CallToAction from '@components/CallToAction';
 import LatestWork from '@components/LatestWork';
 import Skills from '@components/skills/Skills';
+import TestForJobs from '@components/testsForJobs/TestsForJobs';
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
     props: {
@@ -21,6 +22,7 @@ const Home: NextPage = () => (
         <PersonalInfo />
         <Skills />
         <LatestWork />
+        <TestForJobs />
         <Experiences />
         <CallToAction />
     </>
