@@ -26,6 +26,9 @@
         "title": "Latest Works",
         "description": "For confidentiality issues and data sensitivity I can't share some assets from my latest works, however you can view most of them in the last year below:"
     },
+    "frontendTests": {
+        "description": "Some of the latest test to apply for frontend development positions with React."
+    },
     "experiences": {
         "title": "Experience",
         "description": "Since my beginning at the end of 2018 I have worked and inverted time on my growth to fortify my debilities and every day I get closer to the professional I want to be."
