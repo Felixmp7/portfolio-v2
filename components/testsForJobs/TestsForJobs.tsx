@@ -20,8 +20,8 @@ const TestForJobs = () => {
                 {t('frontendTests.description')}
             </p>
 
-            <div className="grid w-full grid-cols-2 gap-10 mt-10 place-items-center">
-                <a href="https://admirable-dasik-8f8f85.netlify.app/" target="__blank" className="relative inline-block w-full overflow-hidden rounded-lg h-96">
+            <div className="grid w-full gap-10 mt-10 tabletLg:grid-cols-2 place-items-center">
+                <a href="https://admirable-dasik-8f8f85.netlify.app/" target="__blank" className="relative inline-block w-full overflow-hidden rounded-lg tabletLg:h-96">
                     <Image
                         src={reingTest}
                         alt="reign-test"
@@ -30,7 +30,7 @@ const TestForJobs = () => {
                         layout="responsive"
                     />
                 </a>
-                <a href="https://matic-test.vercel.app/" target="__blank" className="relative inline-block w-full overflow-hidden rounded-lg h-96">
+                <a href="https://matic-test.vercel.app/" target="__blank" className="relative inline-block w-full overflow-hidden border rounded-lg tabletLg:h-96">
                     <Image
                         src={maticTest}
                         alt="matic-test"
