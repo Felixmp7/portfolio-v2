@@ -17,6 +17,7 @@ export const getTextColor = (slug: eEntrerprises) => {
         [eEntrerprises.servisenior]: 'text-custom-purple',
         [eEntrerprises.wadara]: 'text-orange-500',
         [eEntrerprises.brocsoft]: 'text-blue-400',
+        [eEntrerprises.matic]: 'text-blue-300',
     };
     return handler[slug];
 };

@@ -51,8 +51,9 @@ const experiences: TExperience[] = [
         periodTranslated: 'October 2022',
         charge: 'React Developer Ssr.',
         isCurrent: true,
-        resume: 'En búsqueda de nuevas oportunidades',
-        resumeTranslated: 'Looking for new opportunities',
+        enterpriseSlug: eEntrerprises.matic,
+        resume: 'Desarrollo de aplicaciones web para clientes de la empresa.',
+        resumeTranslated: 'Web apps development and maintenance for company clients',
     },
 ];
 

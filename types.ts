@@ -5,7 +5,8 @@ export enum eEntrerprises {
     anincubator = 'anincubator',
     servisenior = 'servisenior',
     wadara = 'wadara',
-    brocsoft = 'brocsoft'
+    brocsoft = 'brocsoft',
+    matic = 'matic',
 
 }
 

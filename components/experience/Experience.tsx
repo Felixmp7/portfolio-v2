@@ -23,7 +23,7 @@ const Experience = ({ currentExperience }: Props) => {
             <span className="block text-sm">{period}</span>
             <span className="block text-xl font-semibold">{currentExperience.charge}</span>
             {currentExperience.enterpriseSlug && (
-                <span className={`text-sm capitalize ${getTextColor(currentExperience.enterpriseSlug)}`}>
+                <span className={`text-sm capitalize font-bold ${getTextColor(currentExperience.enterpriseSlug)}`}>
                     {currentExperience.enterpriseSlug}
                 </span>
             )}
