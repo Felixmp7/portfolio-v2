@@ -4,7 +4,6 @@ import { useTranslation } from 'next-i18next';
 import { saveAs } from 'file-saver';
 import me from 'public/assets/me.jpeg';
 import reactLogo from 'public/assets/react.png';
-import useLanguage from '@hooks/useLanguage';
 import Layout from './layout/Layout';
 
 const socialLinks = [
@@ -27,21 +26,18 @@ const socialLinks = [
 
 const PersonalInfo = () => {
     const { t } = useTranslation('common');
-    const { isInEnglish } = useLanguage();
 
-    const handleDownload = () => {
-        if (isInEnglish) {
-            saveAs('/assets/files/cv-september-2022_en.pdf', 'cv-felix-pacheco_en.pdf');
-        } else {
-            saveAs('/assets/files/cv-september-2022_es.pdf', 'cv-felix-pacheco_es.pdf');
-        }
-    };
+    const handleDownload = () => saveAs(
+        '/assets/files/CV-AGO-2023-Felix-Pacheco.pdf',
+        'cv-felix-pacheco_en.pdf',
+    );
 
     return (
         <Layout
             classes={{
                 outside: 'personal-info-bg',
-                container: 'flex flex-col items-center justify-center text-black personal-info-min-h',
+                container:
+          'flex flex-col items-center justify-center text-black personal-info-min-h',
             }}
         >
             <div className="w-full my-20 laptop:flex laptopLg:w-5/6 desktop:w-2/3 gap-x-10 desktop:my-0">
@@ -52,9 +48,7 @@ const PersonalInfo = () => {
                     <h4 className="text-3xl font-medium text-slate-800">Felix Pacheco</h4>
                     <div className="items-center hidden tablet:flex">
                         <Image src={reactLogo} alt="react" width={20} height={20} />
-                        <h5 className="ml-2 text-lg text-react">
-                            React Developer
-                        </h5>
+                        <h5 className="ml-2 text-lg text-react">React Developer</h5>
                     </div>
 
                     <p className="mt-6 text-slate-700">
@@ -78,7 +72,12 @@ const PersonalInfo = () => {
                     </div>
                     <div className="flex items-center justify-center mt-8 laptop:justify-start text-slate-700">
                         {socialLinks.map((link) => (
-                            <a key={link.name} href={link.url} target="__blank" className="mr-4 text-2xl">
+                            <a
+                                key={link.name}
+                                href={link.url}
+                                target="__blank"
+                                className="mr-4 text-2xl"
+                            >
                                 <i aria-hidden className={link.icon} />
                             </a>
                         ))}
