@@ -47,13 +47,22 @@ const experiences: TExperience[] = [
         resumeTranslated: 'Web apps development and maintenance for company clients',
     },
     {
-        period: 'Octubre 2022',
-        periodTranslated: 'October 2022',
+        period: 'Octubre 2022 - Marzo 2023',
+        periodTranslated: 'October 2022 - March 2023',
+        charge: 'React Developer Ssr.',
+        isCurrent: false,
+        enterpriseSlug: eEntrerprises.matic,
+        resume: 'Desarrollo y mantenimiento de aplicaciones para ofrecer: 1. SDK app para facilitar formas de pago en USA. 2. Portal app para gestionar pagos y compañias asociadas.',
+        resumeTranslated: 'Develop and maintenance pull of apps to offer: 1. SDK app to offer an easy way to handle your payments in USA. 2. Portal app to manage your payments and companies associated.',
+    },
+    {
+        period: 'Marzo 2023 - Actualidad',
+        periodTranslated: 'March 2023 - Current',
         charge: 'React Developer Ssr.',
         isCurrent: true,
-        enterpriseSlug: eEntrerprises.matic,
-        resume: 'Desarrollo de aplicaciones web para clientes de la empresa.',
-        resumeTranslated: 'Web apps development and maintenance for company clients',
+        enterpriseSlug: eEntrerprises.servicepad,
+        resume: 'Desarrollo y mantenimiento de aplicación web para ofrecer gestion de contratos con compañias, manufacturers y dealers in el mundo de la construcción de diferentes tipos de estructuras.',
+        resumeTranslated: 'Web app development and maintenance to offer a way to manage contracts with companies, manufacturers and dealers in the world of construction of different unit structures.',
     },
 ];
 

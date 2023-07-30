@@ -7,6 +7,7 @@ export enum eEntrerprises {
     wadara = 'wadara',
     brocsoft = 'brocsoft',
     matic = 'matic',
+    servicepad = 'servicepad',
 
 }
 
